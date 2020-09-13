@@ -25,6 +25,44 @@
 <link rel="stylesheet" type="text/css" href="css/custom-responsive-style.css">
 <script type="text/javascript" src="scripts/jquery-3.2.1.min.js"></script>
 <script type="text/javascript" src="scripts/plugin-active.js"></script>
+<!--PENDO AGENT-->
+  <script>
+    (function(apiKey){
+      (function(p,e,n,d,o){var v,w,x,y,z;o=p[d]=p[d]||{};o._q=[];
+        v=['initialize','identify','updateOptions','pageLoad','track'];for(w=0,x=v.length;w<x;++w)(function(m){
+          o[m]=o[m]||function(){o._q[m===v[0]?'unshift':'push']([m].concat([].slice.call(arguments,0)));};})(v[w]);
+        y=e.createElement(n);y.async=!0;y.src='https://pendo-mobile-plat-static.storage.googleapis.com/agent/static/'+apiKey+'/pendo.js';
+        z=e.getElementsByTagName(n)[0];z.parentNode.insertBefore(y,z);})(window,document,'script','pendo');
+
+      // Call this whenever information about your visitors becomes available
+      // Please use Strings, Numbers, or Bools for value types.
+      pendo.initialize({
+        visitor: {
+          id:              '1'   // Required if user is logged in
+          // email:        // Recommended if using Pendo Feedback, or NPS Email
+          // full_name:    // Recommended if using Pendo Feedback
+          // role:         // Optional
+
+          // You can add any additional visitor level key-values here,
+          // as long as it's not one of the above reserved names.
+        },
+
+        account: {
+          id:           '2' // Highly recommended
+          // name:         // Optional
+          // is_paying:    // Recommended if using Pendo Feedback
+          // monthly_value:// Recommended if using Pendo Feedback
+          // planLevel:    // Optional
+          // planPrice:    // Optional
+          // creationDate: // Optional
+
+          // You can add any additional account level key-values here,
+          // as long as it's not one of the above reserved names.
+        }
+      });
+    })('2db36dc9-8228-4bdf-56b3-8eea91b487d3');
+  </script>
+  <!--PENDO AGENT-->
 </head>
 <body>
   <header>
@@ -128,35 +166,35 @@
       </div>
     </div>
   </div>
-</section> 
-<section id="OurBlog"> 
+</section>
+<section id="OurBlog">
   <div class="container">
     <h2>Our Blog</h2>
     <p>A frequent, chronological publication of<br /> personal thoughts and Web links.</p>
     <div class="blog-wrap">
-      <div class="each-block clearfix one"> 
+      <div class="each-block clearfix one">
         <div class="icon">
           <img src="images/blog-icon.png">
         </div>
-        <div class="blog-intro"> 
+        <div class="blog-intro">
           <h3>Opening New Doors for..</h3>
           <p>When a group of ambitious designers meet, you know something hot is brewing. Take a closer look and you’ll find them murmuring away..</p>
         </div>
       </div>
-      <div class="each-block clearfix two"> 
+      <div class="each-block clearfix two">
         <div class="icon">
           <img src="images/blog-icon.png">
         </div>
-        <div class="blog-intro"> 
+        <div class="blog-intro">
           <h3>Is Your Content Strategy Playing..</h3>
           <p>Compelling creative assets play a major role in the success of your Paid Customer Acquisition program..</p>
         </div>
       </div>
-      <div class="each-block clearfix three"> 
+      <div class="each-block clearfix three">
         <div class="icon">
           <img src="images/blog-icon.png">
         </div>
-        <div class="blog-intro"> 
+        <div class="blog-intro">
           <h3>Glocalization Helps Small..</h3>
           <p>At Position², we combine creative thinking and best practices for each channel to develop engaging and effective assets to enhance your brand.. </p>
         </div>
@@ -174,7 +212,7 @@
     <div class="testi-wrapper">
         <div class="latest-testimonials each-testi">
           <div class="division">
-            <span>03.</span> 
+            <span>03.</span>
             <div class="title">
               <h4>Testimonials</h4>
               <h6>Read our clients thoughts..</h6>
